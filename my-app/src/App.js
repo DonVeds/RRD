@@ -1,18 +1,17 @@
 import React from 'react';
 import './App.css';
+import Header from './header/Header.jsx'
+import Aside from './aside/Aside.jsx'
+import Main from './main/Main.jsx'
+// import Footer from './footer/'
 
-function App() {
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <ul>
-          <li>Css</li>
-          <li>Html</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>Mobx</li>
-        </ul>
-      </header>
+      <Header className="Header" />
+      <Aside className="Aside" />
+      <Main className="Main" />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.Profile{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 60px 60px auto;
+  grid-template-areas: 
+    "img name ."
+    "img about about"
+    "posts posts posts";
+}
+
+.Profile-img{
+  grid-area: img;
+}
+
+.Profile-name{
+  grid-area: name;
+}
+
+.Profile-about{
+  grid-area: about;
+}
+
+.Profile-posts{
+  grid-area: posts;
+}

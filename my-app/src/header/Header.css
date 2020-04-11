@@ -1,0 +1,12 @@
+.Header{
+  display: flex;
+  line-height: 50px;
+}
+
+.Header-img{
+  height: 50px;
+}
+
+.Header-name{
+  margin: 0;
+}

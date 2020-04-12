@@ -5,6 +5,7 @@ import Profile from "./Profile/Profile.jsx"
 const Main = () => {
   return (
     <div className="Main" >
+      <hr/>
       <Profile/>
     </div>
   )

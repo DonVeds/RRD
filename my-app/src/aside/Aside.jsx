@@ -1,17 +1,18 @@
 import React from "react";
+import "./Aside.css"
 
 const Aside = () => {
   return (
     <aside className="Aside">
-      <ul>
+      <ul className="Aside-links">
         <li>
-          <a href="#">Name</a>
+          <a className="Aside-link" href="#">Name</a>
         </li>
         <li>
-          <a href="#">Posts</a>
+          <a className="Aside-link" href="#">Posts</a>
         </li>
         <li>
-          <a href="#">Profile</a>
+          <a className="Aside-link" href="#">Profile</a>
         </li>
       </ul>
     </aside>

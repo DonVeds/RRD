@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './header/Header.jsx'
-import Aside from './aside/Aside.jsx'
-import Main from './main/Main.jsx'
+import Header from './components/header/Header.jsx'
+import Aside from "./components/aside/Aside.jsx";
+import Main from "./components/main/Main.jsx";
 // import Footer from './footer/'
 
 

@@ -3,18 +3,24 @@ import "./Main.css";
 import Profile from "./Profile/Profile"
 import Messages from "./Messages/Messages"
 import Music from "./Music/Music"
-import {Route, BrowserRouter} from "react-router-dom"
+import { Router, Route, Link, Switch } from "react-router-dom";
 
 const Main = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="Main">
         <hr />
-        <Route path="/profile" component={Profile} />
-        <Route path="/messages" component={Messages} />
-        <Route path="/music" component={Music} />
+        <Link to="/profile">Profile</Link>
+        <Link to="/messages">Messages</Link>
+        <Link to="/music">Music</Link>
+
+        <Switch>
+          <Route path="/profile" component={Profile} />
+          <Route path="/messages" component={Messages} />
+          <Route path="/music" component={Music} />
+        </Switch>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

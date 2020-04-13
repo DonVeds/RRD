@@ -6,13 +6,13 @@ const Aside = () => {
     <aside className="Aside">
       <ul className="Aside-links">
         <li>
-          <a className="Aside-link" href="#">Name</a>
+          <a className="Aside-link" href="/profile">Profile</a>
         </li>
         <li>
-          <a className="Aside-link" href="#">Posts</a>
+          <a className="Aside-link" href="/messages">Messages</a>
         </li>
         <li>
-          <a className="Aside-link" href="#">Profile</a>
+          <a className="Aside-link" href="/music">Music</a>
         </li>
       </ul>
     </aside>

@@ -1,5 +1,5 @@
 .Profile{
-  margin: 0 1%;
+  margin: 0;
   display: grid;
   grid-template-columns: 120px auto auto;
   grid-template-rows: auto 60px 60px auto;
@@ -28,6 +28,10 @@
 
 .Profile-about{
   grid-area: about;
+}
+
+.Profile h3{
+  margin-left: 1%;
 }
 
 .Profile-posts{

@@ -1,0 +1,4 @@
+.Profile-posts_card{
+  display: flex;
+  flex-wrap: wrap;
+}

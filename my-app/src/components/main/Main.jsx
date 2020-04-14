@@ -3,7 +3,7 @@ import "./Main.css";
 import Profile from "./Profile/Profile"
 import Messages from "./Messages/Messages"
 import Music from "./Music/Music"
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 const Main = () => {
   return (

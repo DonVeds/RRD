@@ -1,0 +1,16 @@
+.Messages {
+  display: flex ;
+  padding: 0 10px;
+}
+
+.Messages-dialogs{
+  width: 30%;
+}
+
+.Messages-chat{
+  width: 70%;
+}
+
+.dialogs-item.active{
+  font-weight: bold;
+}

@@ -14,4 +14,10 @@
   background-color: rgba(6, 85, 215, 0.5);
   color: black;
   line-height: 45px;
+  text-decoration: none;
 }
+
+.activeAsideLink{
+  font-weight: bold;
+}
+

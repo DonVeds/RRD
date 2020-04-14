@@ -1,22 +1,40 @@
 import React from "react";
 import "./Aside.css"
-import {Link, BrowserRouter} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 const Aside = () => {
   return (
-      <aside className="Aside">
-        <ul className="Aside-links">
-          <li>
-            <Link to="/profile">Profile</Link>
-          </li>
-          <li>
-            <Link to="/messages">Messages</Link>
-          </li>
-          <li>
-            <Link to="/music">Music</Link>
-          </li>
-        </ul>
-      </aside>
+    <aside className="Aside">
+      <ul className="Aside-links">
+        <li>
+          <NavLink
+            activeClassName="activeAsideLink"
+            className="Aside-link"
+            to="/profile"
+          >
+            Profile
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="activeAsideLink"
+            className="Aside-link"
+            to="/messages"
+          >
+            Messages
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            activeClassName="activeAsideLink"
+            className="Aside-link"
+            to="/music"
+          >
+            Music
+          </NavLink>
+        </li>
+      </ul>
+    </aside>
   );
 };
 

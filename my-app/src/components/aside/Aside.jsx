@@ -1,21 +1,22 @@
 import React from "react";
 import "./Aside.css"
+import {Link, BrowserRouter} from "react-router-dom"
 
 const Aside = () => {
   return (
-    <aside className="Aside">
-      <ul className="Aside-links">
-        <li>
-          <a className="Aside-link" href="/profile">Profile</a>
-        </li>
-        <li>
-          <a className="Aside-link" href="/messages">Messages</a>
-        </li>
-        <li>
-          <a className="Aside-link" href="/music">Music</a>
-        </li>
-      </ul>
-    </aside>
+      <aside className="Aside">
+        <ul className="Aside-links">
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
+          <li>
+            <Link to="/messages">Messages</Link>
+          </li>
+          <li>
+            <Link to="/music">Music</Link>
+          </li>
+        </ul>
+      </aside>
   );
 };
 

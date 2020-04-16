@@ -1,0 +1,31 @@
+.Profile-info{
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 120px auto auto;
+  grid-template-rows: auto 60px 60px auto;
+  grid-template-areas: 
+    "bgi bgi bgi"
+    "img name ."
+    "img about about"
+}
+
+.info-backGroundImg{
+  grid-area: bgi;
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.info-img{
+  grid-area: img;
+  height: 120px;
+}
+
+.info-name{
+  grid-area: name;
+}
+
+.info-about{
+  grid-area: about;
+}

@@ -1,20 +1,33 @@
 import React from "react";
-import "./Messages.css"
+import "./Messages.css";
+import {NavLink} from "react-router-dom";
+
+const DialogsItem = (props) => {
+  return (
+    <NavLink to={"/messages/"+props.id} className="dialogs-item">
+      {props.name}
+    </NavLink>
+  );
+};
+
+const ChatMessage = (props) => {
+  return <div className="chat-message">{props.message}</div>;
+};
 
 const Messages = () => {
   return (
     <div className="Messages">
       <div className="Messages-dialogs">
-        <div className="dialogs-item active">Misha</div>
-        <div className="dialogs-item">Masha</div>
-        <div className="dialogs-item">Mosha</div>
-        <div className="dialogs-item">Musha</div>
-        <div className="dialogs-item">Mesha</div>
+        <DialogsItem id="1" name="Misha" />
+        <DialogsItem id="2" name="Masha" />
+        <DialogsItem id="3" name="Mosha" />
+        <DialogsItem id="4" name="Musha" />
+        <DialogsItem id="5" name="Mesha" />
       </div>
       <div className="Messsages-chat">
-        <div className="chat-message">Hi</div>
-        <div className="chat-message">How are you?</div>
-        <div className="chat-message">What a good day!</div>
+        <ChatMessage message="Hi" />
+        <ChatMessage message="How are you?" />
+        <ChatMessage message="What a good day" />
       </div>
     </div>
   );

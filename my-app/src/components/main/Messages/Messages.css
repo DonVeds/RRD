@@ -5,6 +5,8 @@
 
 .Messages-dialogs{
   width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Messages-chat{

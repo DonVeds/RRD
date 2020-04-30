@@ -10,27 +10,20 @@ let postsData = [
   { id: "5", title: "test post", text: "post", likesCount: "10" },
 ];
 
+let postsElements = postsData.map((p) => (
+  <Post
+    title={ p.title }
+    text={ p.text }
+    likesCount={ p.likesCount }
+  />
+));
+
 const Posts = () => {
   return (
     <div className="Profile-posts">
       <h3>Posts:</h3>
       <div className="Profile-posts_card">
-        <Post
-          title={postsData[0].title}
-          text={postsData[0].text}
-          likesCount={postsData[0].likesCount}
-        />
-        <Post
-          title={postsData[1].title}
-          text={postsData[1].text}
-          likesCount={postsData[1].likesCount}
-        />
-        <Post
-          title={postsData[2].title}
-          text={postsData[2].text}
-          likesCount={postsData[2].likesCount}
-        />
-        <Post />
+        { postsElements }
       </div>
     </div>
   );

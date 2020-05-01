@@ -7,13 +7,13 @@ import Main from "./components/main/Main.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 
-const App = () => {
+const App = (props) => {
   return (
     <div className="App">
       <BrowserRouter>
         <Header className="Header" />
         <Aside className="Aside" />
-        <Main className="Main" />
+        <Main className="Main" appState={props.appState}/>
       </BrowserRouter>
     </div>
   );

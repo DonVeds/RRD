@@ -4,11 +4,11 @@ import "./Messages.css";
 import Dialogs from './MessagesDialogs/MessagesDialogs'
 import Chat from './MessagesChat/MessagesChat'
 
-const Messages = () => {
+const Messages = (props) => {
   return (
     <div className="Messages">
-      <Dialogs/>
-      <Chat/>
+      <Dialogs dialogs={props.dialogs}/>
+      <Chat messages={props.messages}/>
     </div>
   );
 };

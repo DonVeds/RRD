@@ -13,7 +13,7 @@ const App = (props) => {
       <BrowserRouter>
         <Header className="Header" />
         <Aside className="Aside" />
-        <Main className="Main" appState={props.appState}/>
+        <Main className="Main" state={props.state}/>
       </BrowserRouter>
     </div>
   );

@@ -7,8 +7,8 @@ import Chat from './MessagesChat/MessagesChat'
 const Messages = (props) => {
   return (
     <div className="Messages">
-      <Dialogs dialogs={props.dialogs}/>
-      <Chat messages={props.messages}/>
+      <Dialogs dialogs={props.messagesPageData.dialogs}/>
+      <Chat messages={props.messagesPageData.messages}/>
     </div>
   );
 };

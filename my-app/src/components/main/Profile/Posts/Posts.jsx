@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Post from "./Post/Post"
 import "./Posts.css"
 
@@ -13,12 +13,24 @@ const Posts = (props) => {
       text={ p.text }
       likesCount={ p.likesCount }
     />
-  
   ));
+
+  let newPostElement = React.useRef(null);
+
+  let addPost = () => {
+    let text = newPostElement.current.value;
+    alert(text);
+  };
 
   return (
     <div className="Profile-posts">
-      <h3>Posts:</h3>
+      <h3>My posts</h3>
+      <div className="Profile-posts_new">
+        <textarea ref={newPostElement} cols="30" rows="5">
+
+        </textarea>
+        <button onClick={ addPost }>Add new post</button>
+      </div>
       <div className="Profile-posts_card">
         { postsElements }
       </div>

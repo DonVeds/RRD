@@ -1,8 +1,10 @@
+import { renderEntireTree } from "../render";
+
 let state = {
   profilePageData: {
     posts: [
-      { id: "1", title: "Misha", text: "Hello to all my friends", likesCount: "12" },
-      { id: "2", title: "Masha", text: "Today is really cold", likesCount: "11" },
+      { id: "1", title: "Hi", text: "Hello to all my friends", likesCount: "12" },
+      { id: "2", title: "Weather", text: "Today is really cold", likesCount: "11" },
       { id: "3", title: "test post", text: "post", likesCount: "10" },
       { id: "4", title: "test post", text: "post", likesCount: "10" },
       { id: "5", title: "test post", text: "post", likesCount: "10" }
@@ -25,5 +27,15 @@ let state = {
     ]
   }
 };
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: state.profilePageData.posts.length + 1, 
+    text: postMessage,
+    likesCount: 0
+  };
+  state.profilePageData.posts.push(newPost);
+  renderEntireTree(state);
+}
 
 export default state

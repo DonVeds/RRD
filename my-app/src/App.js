@@ -13,7 +13,7 @@ const App = (props) => {
       <BrowserRouter>
         <Header className="Header" />
         <Aside className="Aside" />
-        <Main className="Main" state={props.state}/>
+        <Main className="Main" state={props.state} addPost={props.addPost} />
       </BrowserRouter>
     </div>
   );

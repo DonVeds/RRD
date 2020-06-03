@@ -12,7 +12,7 @@ const Main = (props) => {
         <hr />
 
         <Switch>
-          <Route path="/profile"  render = { () => <Profile profilePageData={props.state.profilePageData} addPost={props.addPost}/>} />
+        <Route path="/profile" render={() => <Profile profilePageData={props.state.profilePageData} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>} />
           <Route path="/messages" render = { () => <Messages messagesPageData={props.state.messagesPageData} />} />
           <Route path="/music"    render = { () => <Music/> }/>
         </Switch>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {addPost, updateNewPostText} from './redux/state';
+import state, {addPost, updateNewPostText, subscribe} from './redux/state';
 
 export let renderEntireTree = (state) => {
   ReactDOM.render(
@@ -12,3 +12,8 @@ export let renderEntireTree = (state) => {
     document.getElementById('root')
   );
 }
+
+renderEntireTree(state);
+
+subscribe(renderEntireTree);
+

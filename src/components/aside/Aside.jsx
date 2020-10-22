@@ -7,7 +7,7 @@ const Aside = () => {
     <aside className="Aside">
       <div className="Aside-fixed">
         <div className="Aside-header">
-          <h1 className="Aside-title">IN TOUCH</h1>
+          <h1 className="Aside-title">RRD</h1>
         </div>
         <div className="Aside-profilePreview">
           <img src="/ProfileImg.png" className="profilePreview-img" alt="" srcset=""/>

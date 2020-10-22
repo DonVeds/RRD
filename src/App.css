@@ -1,20 +1,5 @@
 .App{
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 100px auto;
-  grid-template-areas: 
-    "aside header header header"
-    "aside main   main   main  "
+  display: flex;
 }
 
-.Header{
-  grid-area: header;
-}
 
-.Aside{
-  grid-area: aside;
-}
-
-.Main{
-  grid-area: main;
-}

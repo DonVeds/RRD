@@ -1,12 +1,14 @@
 .Aside{
   min-height: 100vh;
   background-color: #8757df;
-  padding-left: 50px;
-  position: fixed;
+  width: 250px;
+  color: #c3abef;
+  flex-shrink: 0;
 }
 
 .Aside-fixed{
-  position: sticky;
+  position: fixed;
+  padding-left: 45px;
 }
 
 .Aside-header{
@@ -18,20 +20,35 @@
   padding-top: 35px;
 }
 
+.Aside-profilePreview{
+  margin-bottom: 23px;
+}
+
+.profilePreview-img{
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.profilePreview-name{
+  margin-top: 12px;
+  float: right;
+  margin-bottom: 0;
+  color: white;
+}
+
 .Aside-links{
   display: flex;
   flex-direction: column;
 }
 
 .Aside-link{
-  font-size: 24px;
-  background-color: rgba(6, 85, 215, 0.5);
-  color: black;
   line-height: 45px;
   text-decoration: none;
+  color: #c3abef;
 }
 
 .activeAsideLink{
-  font-weight: bold;
+  color: white;
 }
 

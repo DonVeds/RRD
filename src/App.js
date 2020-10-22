@@ -11,14 +11,16 @@ const App = (props) => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header className="Header" />
         <Aside className="Aside" />
-        <Main
-          className="Main"
-          state={props.state}
-          addPost={props.addPost}
-          updateNewPostText={props.updateNewPostText}
-        />
+        <div className = "Page">
+          <Header className="Header" />
+          <Main
+            className="Main"
+            state={props.state}
+            addPost={props.addPost}
+            updateNewPostText={props.updateNewPostText}
+          />
+        </div>
       </BrowserRouter>
     </div>
   );

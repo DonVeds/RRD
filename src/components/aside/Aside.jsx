@@ -5,35 +5,34 @@ import {NavLink} from "react-router-dom"
 const Aside = () => {
   return (
     <aside className="Aside">
-      <ul className="Aside-links">
-        <li>
+      <div className="Aside-fixed">
+        <div className="Aside-header">
+          <h1 className="Aside-title">IN TOUCH</h1>
+        </div>
+        <div className="Aside-links">
           <NavLink
             activeClassName="activeAsideLink"
             className="Aside-link"
             to="/profile"
-          >
+            >
             Profile
           </NavLink>
-        </li>
-        <li>
           <NavLink
             activeClassName="activeAsideLink"
             className="Aside-link"
             to="/messages"
-          >
+            >
             Messages
           </NavLink>
-        </li>
-        <li>
           <NavLink
             activeClassName="activeAsideLink"
             className="Aside-link"
             to="/music"
-          >
+            >
             Music
           </NavLink>
-        </li>
-      </ul>
+        </div>
+      </div>
     </aside>
   );
 };

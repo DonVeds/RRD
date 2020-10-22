@@ -1,11 +1,10 @@
 .App{
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 50px auto auto;
+  grid-template-rows: 100px auto;
   grid-template-areas: 
-    "header header header aside"
-    "main   main   main   aside"
-    "footer footer footer aside";
+    "aside header header header"
+    "aside main   main   main  "
 }
 
 .Header{

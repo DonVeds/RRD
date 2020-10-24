@@ -4,13 +4,17 @@ import "./Header.css"
 const Header = () => {
   return (
     <header className="Header">
-      <img
-        className="Header-img"
-        src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/ferry_26f4.png"
-        alt=""
-        srcSet=""
-      />
-      <h1 className="Header-name">Best Social Network for not alone people</h1>
+      <h1 className="Header-title">Hello, Ariel! What's up?</h1>
+      <div className="Header-searchBar">
+        <div className="searchBar-buttonsBar">
+          <img src="/svg/envelope.svg" alt="Messages" className="Header-messages"/>
+          <img src="/svg/heart.svg" alt="Likes" className="Header-likes"/>
+        </div>
+        <div className="searchBar-searchField">
+          <img src="/svg/magnifying-glass.svg" alt=""/>
+          <input type="text" name="" placeholder="Search..."/>
+        </div>
+      </div>
     </header>
   );
 };

@@ -1,14 +1,43 @@
 .Header{
   display: flex;
-  line-height: 50px;
+  height: 30px;
+  padding: 35px;
 }
 
-.Header-img{
-  height: 50px;
-}
-
-.Header-name{
+.Header-title{
   margin: 0;
-  text-align: center;
-  width: 100%;
+  flex-grow: 8;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.Header-searchBar{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-searchBar img{
+  height: 25px;
+  fill: #8757df;
+  padding: 0 10px;
+}
+
+.searchBar-buttonsBar{
+  display: flex;
+  align-items: center;
+}
+
+.searchBar-searchField{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.searchBar-searchField input{
+  border: 0;
+  color: rgb(58, 58, 58);
 }

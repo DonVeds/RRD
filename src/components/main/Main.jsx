@@ -9,7 +9,6 @@ const Main = (props) => {
   return (
 
       <div className="Main">
-        <hr />
 
         <Switch>
         <Route path="/profile" render={() => <Profile profilePageData={props.state.profilePageData} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>} />

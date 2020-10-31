@@ -61,14 +61,7 @@ const Aside = () => {
             className="Aside-link"
             to="/videos"
             >
-            Videos
-          </NavLink>
-          <NavLink
-            activeClassName="activeAsideLink"
-            className="Aside-link"
-            to="/audios"
-            >
-            Audios
+            Weather
           </NavLink>
           <NavLink
             activeClassName="activeAsideLink"

@@ -2,7 +2,6 @@ import React from "react";
 import "./Main.css";
 import Profile from "./Profile/Profile"
 import Messages from "./Messages/Messages"
-import Music from "./Music/Music"
 import { Route, Switch } from "react-router-dom";
 
 const Main = (props) => {

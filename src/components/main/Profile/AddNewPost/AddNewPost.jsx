@@ -16,11 +16,9 @@ const AddNewPost = (props) => {
   }
 
   return (
-    <div className="Profile">
-      <div className="Profile-posts_new">
-        <textarea ref={newPostElement} onChange={onPostChange} value={props.newPostText} cols="30" rows="5" />
-        <button onClick={ addPost }>Add new post</button>
-      </div>
+    <div className="Profile-addNewPost">
+      <textarea className="Profile-addNewPost-input" ref={newPostElement} onChange={onPostChange} value={props.newPostText} placeholder="Add a post..." cols="30" rows="5" />
+      <button className="Profile-addNewPost-btn" onClick={ addPost }>Add new post</button>
     </div>
   );
 };

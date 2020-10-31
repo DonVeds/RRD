@@ -1,0 +1,27 @@
+.Profile-addNewPost{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.Profile-addNewPost-input{
+  border: 0;
+  resize: vertical;
+  width: 80%;
+  padding: 0;
+  margin: 0;
+  height: 16px;
+}
+
+.Profile-addNewPost-btn{
+  position: relative;
+  right: 5px;
+  width: 15%;
+  margin: 0 0 0 5%;
+  border: 0;
+  height: 16px;
+  background-color: #a783eb;
+  color: #fff;
+}

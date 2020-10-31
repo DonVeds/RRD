@@ -10,7 +10,7 @@ let store = {
         { id: "4", title: "test post", text: "post", likesCount: "10" },
         { id: "5", title: "test post", text: "post", likesCount: "10" }
       ],
-      newPostText: "Какой хороший пост"
+      newPostText: ""
     },
     messagesPageData: {
       dialogs: [

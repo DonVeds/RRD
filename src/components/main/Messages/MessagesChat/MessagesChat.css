@@ -1,4 +1,36 @@
 .Messages-chat{
   width: 70%;
   background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-message{
+  background-color: #8757df;
+  width: fit-content;
+  border: 5px solid #8757df;
+  border-radius: 5px 5px 5px 0;
+  color: white;
+  margin-top: 5px;
+}
+
+.Messages-chat-inputField{
+  align-self: flex-end;
+}
+
+.Messages-chat-inputField-input{
+  height: 25px;
+  border: 1px dashed #8757df;
+  border-style: dashed none dashed dashed;
+}
+
+.Messages-chat-inputField-btn{
+  height: 30px;
+  background-color: #8757df;
+  border-radius: 5px;
+  border: 0;
+  color: white;
 }

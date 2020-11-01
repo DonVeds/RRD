@@ -20,9 +20,9 @@ const Chat = (props) => {
   return (
     <div className="Messages-chat">
       {messagesElements}
-      <div className="Profile-posts_new">
-        <textarea ref={newMessage} cols="30" rows="5"></textarea>
-        <button onClick={sendMessage}>send</button>
+      <div className="Messages-chat-inputField">
+        <input className="Messages-chat-inputField-input" placeholder=" New message..." ref={newMessage} cols="30" rows="5"></input>
+        <button className="Messages-chat-inputField-btn" onClick={sendMessage}>Send</button>
       </div>
     </div>
   );

@@ -12,9 +12,16 @@
 .dialogs-item{
   text-decoration: none;
   color: black;
+  width: 100px;
+  margin: auto;
+  font-size: 20px;
 }
 
 .dialogs-item.active{
   font-weight: bold;
   color: #8757df;
+}
+
+.dialogs-item-img{
+  height: 20px;
 }

@@ -3,7 +3,7 @@
   background-color: #fff;
   border-radius: 20px;
   margin-top: 20px;
-  padding: 15px 15px 15px 15px;
+  padding: 22px 25px 25px 25px;
 }
 
 .Profile-addNewPost-input{
@@ -13,6 +13,7 @@
   padding: 0;
   margin: 0;
   height: 16px;
+  font-size: 16px;
 }
 
 .Profile-addNewPost-btn{
@@ -24,4 +25,6 @@
   height: 16px;
   background-color: #a783eb;
   color: #fff;
+  border-radius: 5px;
+  font-size: 13px;
 }

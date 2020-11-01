@@ -1,10 +1,43 @@
-.Profile-posts-post{
-  border: 1px solid black;
+.post{
+  background-color: white;
   width: 300px;
-  padding: 10px;
-  margin: 10px
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-.Profile-posts-post p {
+.post-header p{
+  margin: 0;
+}
+
+.post-header-img{
+  height: 32px;
+  float: left;
+  margin-right: 5px;
+}
+
+.post-header-date{
+  color: grey;
+  font-size: 12px;
+}
+
+.post-text{ 
+  margin: 10px 0;
+}
+
+.post-likes{
+  width: 45px;
+  margin: auto;
+}
+
+.post-likes-img{
+  color: #8757df;
+  height: 20px;
+  float: left;
+  margin-right: 5px;
+}
+
+.post-likes-count{
+  color: gray;
   margin: 0;
 }

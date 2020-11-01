@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Messages.css";
+import "./MessagesChat.css";
 
 const Chat = (props) => {  
   const ChatMessage = (props) => {
@@ -18,8 +18,8 @@ const Chat = (props) => {
   };
 
   return (
-    <div>
-      <div className="Messsages-chat">{messagesElements}</div>
+    <div className="Messages-chat">
+      {messagesElements}
       <div className="Profile-posts_new">
         <textarea ref={newMessage} cols="30" rows="5"></textarea>
         <button onClick={sendMessage}>send</button>

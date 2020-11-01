@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Messages.css";
+import "./MessagesDialogs.css";
 import { NavLink } from "react-router-dom";
 
 

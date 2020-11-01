@@ -1,0 +1,20 @@
+.Messages-dialogs{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-right: 5%;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.dialogs-item{
+  text-decoration: none;
+  color: black;
+}
+
+.dialogs-item.active{
+  font-weight: bold;
+  color: #8757df;
+}

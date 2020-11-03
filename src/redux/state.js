@@ -32,27 +32,40 @@ let store = {
   _callSubscriber() {
     console.log("State changed");
   },
-  addPost() {
-    let newPost = {
-      id: this._state.profilePageData.posts.length + 1, 
-      text: this._state.profilePageData.newPostText,
-      likesCount: 0
-    };
-    this._state.profilePageData.posts.push(newPost);
-    this._state.profilePageData.newPostText = "";
-    this._callSubscriber(this._state);
-  },
-  updateNewPostText(newText) {
-    this._state.profilePageData.newPostText = newText;
-    this._callSubscriber(this._state);
+
+  getState() {
+      return this._state
   },
   subscribe(observer) {
     this._callSubscriber = observer;
   },
 
-  getState() {
-    return this._state
+  _addPost() {
+    let newPost = {
+      id: this._state.profilePageData.posts.length + 1,
+      text: this._state.profilePageData.newPostText,
+      likesCount: 0,
+    };
+    this._state.profilePageData.posts.push(newPost);
+    this._state.profilePageData.newPostText = "";
+    debugger
+    //Не очищает поле ввода, возможна ошибка в _CallSubscriber
+    this._callSubscriber(this._state);
+  },
+  _updateNewPostText(newText) {
+    this._state.profilePageData.newPostText = newText;
+    this._callSubscriber(this._state);
+  },
+
+
+  dispatch(action){
+    if (action.type === "ADD-POST") {
+      this._addPost();
+    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+      this._updateNewPostText(action.newText)
+    }
   }
+
 
 }
 
